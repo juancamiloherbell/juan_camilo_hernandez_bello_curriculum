@@ -42,3 +42,12 @@ h1{
     /* text-transform: capitalize; */ /* poner textos en mayuscula minuscula inicial mayuscula */
     /* text-decoration: underline; */
 }
+.hero{
+    height: 300px;
+}
+.project-details{
+    width: 500px;
+}
+.project-imageContainer{
+    width: 500px;
+}
