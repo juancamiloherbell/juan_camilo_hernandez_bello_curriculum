@@ -81,6 +81,7 @@ h1 strong{
     margin-left: 0px; */
     padding: 20px;
     background-color: white;
+    display: flex;
 }
 .project-details{
     width: 500px;
