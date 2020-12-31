@@ -104,7 +104,9 @@ h1 strong{
     /* flex-direction: row; */ /* posiciona las cajas en fila */
     /* flex-wrap: nowrap; */ /* mantiene los elementos segidos en una fila  */
     flex-wrap: wrap; /* baja los elementos a una sigiente fial al llenar el ancho del contenedor padre */
-
+    /* justify-content: center; */ /* posiciona las cajas al centro */
+    /* justify-content: space-around; */ /* deja un espaciado igual a la izquierda y a la derecha de cada caja */
+    justify-content: space-evenly; /* deja un espacio igual entre las cajas */
 }
 .box{
     width: 50px;
