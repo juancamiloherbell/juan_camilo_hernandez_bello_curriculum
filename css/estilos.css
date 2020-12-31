@@ -51,6 +51,20 @@ h1{
 h1 strong{
     color: #026fff;
 }
+
+/* quita los estilos que vienen por defecto (cómo la numeración y viñetas) con los elementos de tipo lista usando la propiedad list-style. También deja el padding y margin en cero para evitar espacios en blanco en los bordes de la lista. */
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Ahora hay que quitar el margin al <figure> para evitar ese espacio en blanco en la parte superior de nuestro header. */
+figure {
+    margin: 0;
+}
+
 .hero{
     height: 300px;
     /* background-image: url('../images/hero.jpg'); */
@@ -89,14 +103,35 @@ h1 strong{
 .project-imageContainer{
     width: 500px;
 }
+/* Añade al header un display flex para que los elementos hijos (el <figure> y el <nav>) se alineen en forma horizontal. */
+/* Añade la propiedad justify-content con el valor space-between para mandar cada elemento hijo del header a un extremo contrario. El figure a la izquierda y el nav a la derecha. */
 .header{
-    background-color:  #1b2127;
+    background-color: #1b2127; 
     color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px; /* <---- solo agregamos esta linea ancho del elemento padre*/
 }
-.header a{
+.menu { /* .menu hereda de .header */
+    height: inherit;
+  }
+/* Ahora, añade un display flex al selector de lista <ol> para mostrar los elementos de lista<li> de forma horizontal en lugar de vertical. */
+.header ol { /* .header ol hereda de .menu */
+    display: flex;
+    height: inherit;
+  }
+.header ol li { /* .header ol li hereda de .header ol */
+    height: inherit;
+  }
+/*   Añade display flex a los elementos anchor <a> para poder centrarlos ahora que ya heredaron una altura determinada. */
+.header a { /* .header a hereda de .header ol li */
     color: white;
     text-decoration: none;
-}
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px; /* <---- solo agregamos esta linea añade un espacio entre los diferentes elementos del menú con un padding superior e inferior de 0 y izquierdo/derecho de 10px.*/
+  }
 
 .flexbox{
     display: flex;
@@ -118,5 +153,5 @@ h1 strong{
     border: 1px solid red;
     flex-shrink: 0; /* capcidad de encojer la caja entre 0 y 1 */ 
     /* align-self: flex-start; */ /* sirve para alinear los elemetos hijos dentro del elemento padre */
-     
+
 }
