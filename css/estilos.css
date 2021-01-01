@@ -203,3 +203,41 @@ figure {
 .footer a{
     color: white;
 }
+.event-list{
+    display: flex;
+}
+.event-list-title{
+    margin-left: 20px;
+}
+.event{
+    /* border: solid red; */
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden; /* oculta los elementos que se desbordan del contenedor */
+    background-color: #f4fbff;
+}
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover; /* recota de los bordes la imagen para ajustarla al tamaño del contenedor  */
+}
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.event-decription{
+    text-align: left;
+}
+.event-url{
+    color: #056fff;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
