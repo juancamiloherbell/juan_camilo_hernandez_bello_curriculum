@@ -45,8 +45,10 @@ h1{
     line-height: 150%; /* alto de linea interespaciado */
     letter-spacing: -.2px;
     color: white;
+    margin: 0;
     /* text-transform: capitalize; */ /* poner textos en mayuscula minuscula inicial mayuscula */
     /* text-decoration: underline; */
+
 }
 h1 strong{
     color: #026fff;
@@ -72,6 +74,8 @@ figure {
     /* background-size: 500px 300px; */
     /* background-repeat: no-repeat; */
     /* background-position-x: right; */
+    display: flex;
+    align-items: center;
 }
 .portfolio{
     background-color: #fafafa;
@@ -110,7 +114,8 @@ figure {
     color: white;
     display: flex;
     justify-content: space-between;
-    height: 90px; /* <---- solo agregamos esta linea ancho del elemento padre*/
+    height: 70px; /* <---- solo agregamos esta linea ancho del elemento padre*/
+    align-items: center;
 }
 .menu { /* .menu hereda de .header */
     height: inherit;
@@ -154,4 +159,17 @@ figure {
     flex-shrink: 0; /* capcidad de encojer la caja entre 0 y 1 */ 
     /* align-self: flex-start; */ /* sirve para alinear los elemetos hijos dentro del elemento padre */
 
+}
+.footer{
+    color: white;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img{
+    vertical-align: middle; /* ajusta al medio los textos con respecto a la imagen*/
+}
+.footer a{
+    color: white;
 }
