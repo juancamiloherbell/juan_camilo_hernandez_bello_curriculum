@@ -54,6 +54,14 @@ h1 strong{
     color: #026fff;
 }
 
+h2{
+    color:  #026fff;
+    text-transform: uppercase; /* mayusculas */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
 /* quita los estilos que vienen por defecto (cómo la numeración y viñetas) con los elementos de tipo lista usando la propiedad list-style. También deja el padding y margin en cero para evitar espacios en blanco en los bordes de la lista. */
 ol,
 ul {
@@ -79,6 +87,7 @@ figure {
 }
 .portfolio{
     background-color: #fafafa;
+    padding: 20px;
 }
 .project{
     /* border-top: 10px solid red;
@@ -92,7 +101,7 @@ figure {
     border: 1px solid gray;
     border-radius: 10px;
     /* border-top-left-radius: 50px; */
-    margin: 10px;
+    /* margin: 10px; */
     margin-bottom: 15px;
     /* margin-top: 0px;
     margin-right: 0px;
@@ -100,7 +109,28 @@ figure {
     padding: 20px;
     background-color: white;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project-couse,
+.project-date,
+.project-url{
+    margin: 10px 0;
+}
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+.project-description{
+    font-size: 20px;
+}
+/* .project-date{
+    margin: 10px 0;
+} */
 .project-details{
     width: 500px;
 }
