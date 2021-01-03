@@ -309,7 +309,7 @@ figure {
     font-family: 'Source Sans Pro', sans-serif;
 }
 .container{
-    /* border: 1px solid red; */
+    /* border: 1px solid red;  */
     width: 1000px;
     margin: 0 auto;
     display: inherit;
