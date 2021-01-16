@@ -330,7 +330,9 @@ figure {
 }
 /*Desktop firs se empieza desde el MQ mas grande*/
 @media screen and (max-width:1024px){
-
+    .container{
+        padding: 0 1em;
+    }
 }
 @media screen and (max-width:767px){
     .header{
@@ -396,7 +398,25 @@ figure {
     }
     .event-detail{
         margin: -2em .5em .5em;
-        padding: 1em;
+        padding: 1.5em;
+    }
+    .contact{
+        height: auto;
+        padding: 1em 0;
+        display: block;
+        text-align: center;
+
+    }
+    .form-email button{
+        margin: 1em auto;
+    }
+    .form-email h3{
+        margin-top: 0;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
     }
 }
 @media screen and (max-width:320px){
