@@ -89,9 +89,9 @@ figure {
 }
 .hero-image{
  object-fit: cover;
- width: 400px; 
- height: 350px;
- object-fit: over;
+ /* width: 400px; 
+ height: 350px; */
+ 
 }
 .portfolio{
     background-color: #fafafa;
@@ -234,7 +234,7 @@ figure {
     background-color: #f4fbff;
 }
 .event img{
-    width: 480px;
+    width: 575px;
     height: 200px;
     object-fit: revert; /* recota de los bordes la imagen para ajustarla al tamaño del contenedor  */
 }
@@ -265,31 +265,32 @@ figure {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.social{
-    border: 1px solid red;
-}
+/* .social{
+    border: 1px solid red; 
+} 
+*/
 .social-link{
     display: inline-block;
     width: 50px;
     height: 50px;
-    border: 1px solid white;
+    /* border: 1px solid transparent; */
     margin: 0 10px;
     background-size: 50px 50px;
 }
 .social-link.twitter{
-    background-image: url("");
+    background-image: url("../images/twitter.svg");
     
 }
-.social-link.faccebook{
-    background-image: url("");
+.social-link.facebook{
+    background-image: url("../images/facebook.svg");
     
 }
 .social-link.github{
-    background-image: url("");
+    background-image: url("../images/github.svg");
     
 }
 .social-link.instagram{
-    background-image: url("");
+    background-image: url("../images/instagram.svg");
     
 }
 .form-email input{
@@ -318,7 +319,7 @@ figure {
 }
 .container{
     /* border: 1px solid red;  */
-    max-width: 1000px;
+    max-width: 1200px;
     /* width: 100%; */
     flex: 1;
     margin: 0 auto;
@@ -333,8 +334,31 @@ figure {
     .container{
         padding: 0 1em;
     }
+    .hero{
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+    .hero-image{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    h1{
+        font-size: 2em;
+        z-index: 2;
+    }
+    .event img {
+        width: 475px;
+    }
 }
 @media screen and (max-width:767px){
+    
     .header{
         display: block;
         height: auto;
@@ -393,6 +417,9 @@ figure {
     }
 }
 @media screen and (max-width:480px){
+    h1{
+        font-size: 1.5em;
+    }
     .project-details{
         font-size: 12px;
     }
@@ -420,5 +447,10 @@ figure {
     }
 }
 @media screen and (max-width:320px){
-
+    h1{
+        font-size: 1.2em;
+    }
+    .hero{
+        padding: 2em 1em;
+    }
 }
