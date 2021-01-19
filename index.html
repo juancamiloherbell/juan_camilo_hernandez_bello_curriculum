@@ -19,10 +19,10 @@
             <nav class="menu">
                 <ol>
                     <li>
-                        <a class="link" href="#portafolio">portafolion</a>
+                        <a class="link" href="#portafolio">portafolio</a>
                     </li>
                     <li>
-                        <a class="link" href="#eventos">experienia</a>
+                        <a class="link" href="#eventos">experiencia</a>
                     </li>
                     <li>
                         <a class="link" href="#contacto">trabajemos juntos</a>
@@ -167,15 +167,22 @@
         </div>
     </footer>
     <script>
-        console.log('holalmundo js'); /*imprimir en consola*/
-
+        //console.log('holalmundo js'); /*imprimir en consola*/
+        const ipad = window.matchMedia('screen and (max-width: 767px)');    
         const menu = document.querySelector('.menu'); /*asigna un elemento html a una constante por su clase*/
-        console.log(menu);
+        //console.log(menu);
+        //console.log(burgerButton);
         const burgerButton = document.querySelector('#burger-menu'); /*asigna un elemento html a una constante por su id*/
-        console.log(burgerButton);
 
-        burgerButton.addEventListener('click', hideshow); /*capturar evento*/
-
+        ipad.addListener(validation)
+        function validation(event){
+            if(event.matches){
+                burgerButton.addEventListener('click', hideshow); /*capturar evento*/
+            }
+            else{
+                burgerButton.removeEventListener('click', hideshow); /*remover evento*/
+            }
+        }    
         function hideshow(){
             if(menu.classList.contains('is-active')){
                 menu.classList.remove('is-active'); /*remover una clase para traer el menu*/ 
