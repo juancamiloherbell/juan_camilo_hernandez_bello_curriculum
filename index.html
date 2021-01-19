@@ -10,7 +10,7 @@
     <title>Juan Camilo Hernandez Bello</title>
 </head>
 <body>
-    <i class="icon-menu burger-button"></i>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
         <div class="container">
             <figure class="logo">
@@ -166,5 +166,24 @@
             </div>
         </div>
     </footer>
+    <script>
+        console.log('holalmundo js'); /*imprimir en consola*/
+
+        const menu = document.querySelector('.menu'); /*asigna un elemento html a una constante por su clase*/
+        console.log(menu);
+        const burgerButton = document.querySelector('#burger-menu'); /*asigna un elemento html a una constante por su id*/
+        console.log(burgerButton);
+
+        burgerButton.addEventListener('click', hideshow); /*capturar evento*/
+
+        function hideshow(){
+            if(menu.classList.contains('is-active')){
+                menu.classList.remove('is-active'); /*remover una clase para traer el menu*/ 
+            }
+            else{
+                menu.classList.add('is-active'); /*añadir una clase para traer el menu*/
+            }
+        }
+    </script>
 </body>
 </html>

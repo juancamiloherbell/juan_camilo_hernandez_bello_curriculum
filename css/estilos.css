@@ -4,41 +4,64 @@ declaraciones
 propiedades
 valores */
 
+
 /* selector de etiqueta header - secction -article */
+
+
 /* header{
     background-color: pink;
 } */
 
+
 /* selector decendente */
-/* body header div nav ol li a */ 
+
+
+/* body header div nav ol li a */
+
 
 /* selector de clase */
+
+
 /* .link */
 
+
 /* selector de id */
+
+
 /* #potafolio */
 
+
 /* web para ver colores css */
+
+
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/color_value */
 
+
 /* gris oscuro = #1d252c */
+
+
 /* gris claro = #626262 */
+
+
 /* background gris = #1b2127 */
+
+
 /* celeste = #026fff */
+
+
 /* estilos para los iconos del menu traidos de iconmoon */
+
 @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?gkbuur');
-    src:  url('../fonts/icomoon.eot?gkbuur#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?gkbuur') format('truetype'),
-      url('../fonts/icomoon.woff?gkbuur') format('woff'),
-      url('../fonts/icomoon.svg?gkbuur#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?gkbuur');
+    src: url('../fonts/icomoon.eot?gkbuur#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?gkbuur') format('truetype'), url('../fonts/icomoon.woff?gkbuur') format('woff'), url('../fonts/icomoon.svg?gkbuur#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: never;
@@ -47,83 +70,97 @@ valores */
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-  
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-instagram:before {
+}
+
+.icon-instagram:before {
     content: "\e901";
-  }
-  .icon-twitter:before {
+}
+
+.icon-twitter:before {
     content: "\e902";
-  }
-  .icon-facebook:before {
+}
+
+.icon-facebook:before {
     content: "\e903";
-  }
-  .icon-github:before {
+}
+
+.icon-github:before {
     content: "\e904";
-  }
-  .icon-menu:before {
+}
+
+.icon-menu:before {
     content: "\e900";
-  }
-  
+}
+
+
 /* /////////////////////////////////// */
-body{
+
+body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     font-family: 'Fjalla One', sans-serif;
     font-weight: normal;
     /* font-style: italic; */
 }
 
-h1{
+h1 {
     font-size: 42px;
-    line-height: 150%; /* alto de linea interespaciado */
+    line-height: 150%;
+    /* alto de linea interespaciado */
     letter-spacing: -.2px;
     color: white;
     margin: 0;
-    /* text-transform: capitalize; */ /* poner textos en mayuscula minuscula inicial mayuscula */
+    /* text-transform: capitalize; */
+    /* poner textos en mayuscula minuscula inicial mayuscula */
     /* text-decoration: underline; */
-
 }
-h1 strong{
+
+h1 strong {
     color: #026fff;
 }
 
-h2{
-    color:  #026fff;
-    text-transform: uppercase; /* mayusculas */
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    /* mayusculas */
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 40px;
 }
+
+
 /* quita los estilos que vienen por defecto (cómo la numeración y viñetas) con los elementos de tipo lista usando la propiedad list-style. También deja el padding y margin en cero para evitar espacios en blanco en los bordes de la lista. */
+
 ol,
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
+
 /* Ahora hay que quitar el margin al <figure> para evitar ese espacio en blanco en la parte superior de nuestro header. */
+
 figure {
     margin: 0;
 }
 
-.hero{
+.hero {
     height: 430px;
     /* background-image: url('../images/hero.jpg'); */
-    background-color:  #1b2127;
+    background-color: #1b2127;
     /* background-size: 500px 300px; */
     /* background-repeat: no-repeat; */
     /* background-position-x: right; */
@@ -132,17 +169,19 @@ figure {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.hero-image{
- object-fit: cover;
- /* width: 400px; 
+
+.hero-image {
+    object-fit: cover;
+    /* width: 400px; 
  height: 350px; */
- 
 }
-.portfolio{
+
+.portfolio {
     background-color: #fafafa;
     padding: 50px;
 }
-.project{
+
+.project {
     /* border-top: 10px solid red;
     border-right: 10px solid green;
     border-left: 10px solid orange;
@@ -166,89 +205,127 @@ figure {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.project-title{
+
+.project-title {
     font-size: 30px;
     margin-top: 0;
     margin-bottom: 10px;
 }
+
 .project-course,
 .project-date,
-.project-url{
+.project-url {
     margin: 10px 0;
 }
-.project strong{
+
+.project strong {
     font-family: 'Fjalla One', sans-serif;
 }
-.project-description{
+
+.project-description {
     font-size: 20px;
 }
+
+
 /* .project-date{
     margin: 10px 0;
 } */
-.project-details{
+
+.project-details {
     width: 50%;
 }
-.project-imageContainer{
+
+.project-imageContainer {
     width: 50%;
 }
-.project-imageContainer img{
+
+.project-imageContainer img {
     max-width: 100%;
 }
+
+
 /* Añade al header un display flex para que los elementos hijos (el <figure> y el <nav>) se alineen en forma horizontal. */
+
+
 /* Añade la propiedad justify-content con el valor space-between para mandar cada elemento hijo del header a un extremo contrario. El figure a la izquierda y el nav a la derecha. */
-.header{
-    background-color: #1b2127; 
+
+.header {
+    background-color: #1b2127;
     color: white;
     display: flex;
     justify-content: space-between;
-    height: 70px; /* <---- solo agregamos esta linea ancho del elemento padre*/
+    height: 70px;
+    /* <---- solo agregamos esta linea ancho del elemento padre*/
     align-items: center;
 }
-.menu { /* .menu hereda de .header */
+
+.menu {
+    /* .menu hereda de .header */
     height: inherit;
-  }
+}
+
+
 /* Ahora, añade un display flex al selector de lista <ol> para mostrar los elementos de lista<li> de forma horizontal en lugar de vertical. */
-.header ol { /* .header ol hereda de .menu */
+
+.header ol {
+    /* .header ol hereda de .menu */
     display: flex;
     height: inherit;
-  }
-.header ol li { /* .header ol li hereda de .header ol */
+}
+
+.header ol li {
+    /* .header ol li hereda de .header ol */
     height: inherit;
-  }
+}
+
+
 /*   Añade display flex a los elementos anchor <a> para poder centrarlos ahora que ya heredaron una altura determinada. */
-.header a { /* .header a hereda de .header ol li */
+
+.header a {
+    /* .header a hereda de .header ol li */
     color: white;
     text-decoration: none;
     height: inherit;
     display: flex;
     align-items: center;
-    padding: 0 10px; /* <---- solo agregamos esta linea añade un espacio entre los diferentes elementos del menú con un padding superior e inferior de 0 y izquierdo/derecho de 10px.*/
+    padding: 0 10px;
+    /* <---- solo agregamos esta linea añade un espacio entre los diferentes elementos del menú con un padding superior e inferior de 0 y izquierdo/derecho de 10px.*/
     flex-wrap: wrap;
 }
 
-.flexbox{
+.flexbox {
     display: flex;
     height: 200px;
-    /* flex-direction: column; */ /* posiciona las cajas en columna */
-    /* flex-direction: row; */ /* posiciona las cajas en fila */
-    /* flex-wrap: nowrap; */ /* mantiene los elementos segidos en una fila  */
-    flex-wrap: wrap; /* baja los elementos a una sigiente fial al llenar el ancho del contenedor padre */
-    /* justify-content: center; */ /* posiciona las cajas al centro */
-    /* justify-content: space-around; */ /* deja un espaciado igual a la izquierda y a la derecha de cada caja */
-    justify-content: space-evenly; /* deja un espacio igual entre las cajas */
+    /* flex-direction: column; */
+    /* posiciona las cajas en columna */
+    /* flex-direction: row; */
+    /* posiciona las cajas en fila */
+    /* flex-wrap: nowrap; */
+    /* mantiene los elementos segidos en una fila  */
+    flex-wrap: wrap;
+    /* baja los elementos a una sigiente fial al llenar el ancho del contenedor padre */
+    /* justify-content: center; */
+    /* posiciona las cajas al centro */
+    /* justify-content: space-around; */
+    /* deja un espaciado igual a la izquierda y a la derecha de cada caja */
+    justify-content: space-evenly;
+    /* deja un espacio igual entre las cajas */
     align-items: center;
     border: 1px solid blue;
 }
-.box{
+
+.box {
     width: 50px;
     height: 50px;
     margin: 5px;
     border: 1px solid red;
-    flex-shrink: 0; /* capcidad de encojer la caja entre 0 y 1 */ 
-    /* align-self: flex-start; */ /* sirve para alinear los elemetos hijos dentro del elemento padre */
-
+    flex-shrink: 0;
+    /* capcidad de encojer la caja entre 0 y 1 */
+    /* align-self: flex-start; */
+    /* sirve para alinear los elemetos hijos dentro del elemento padre */
 }
-.footer{
+
+.footer {
     color: white;
     background-color: #1b2127;
     display: flex;
@@ -256,34 +333,44 @@ figure {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.footer img{
-    vertical-align: middle; /* ajusta al medio los textos con respecto a la imagen*/
+
+.footer img {
+    vertical-align: middle;
+    /* ajusta al medio los textos con respecto a la imagen*/
 }
-.footer a{
+
+.footer a {
     color: white;
 }
-.event-list{
+
+.event-list {
     display: flex;
     flex-wrap: wrap;
 }
-.event-list-title{
+
+.event-list-title {
     margin-left: 20px;
 }
-.event{
+
+.event {
     /* border: solid red; */
     margin: 1%;
     width: 48%;
     flex-shrink: 0;
     border-radius: 10px;
-    overflow: hidden; /* oculta los elementos que se desbordan del contenedor */
+    overflow: hidden;
+    /* oculta los elementos que se desbordan del contenedor */
     background-color: #f4fbff;
 }
-.event img{
+
+.event img {
     width: 575px;
     height: 324px;
-    object-fit: revert; /* recota de los bordes la imagen para ajustarla al tamaño del contenedor  */
+    object-fit: revert;
+    /* recota de los bordes la imagen para ajustarla al tamaño del contenedor  */
 }
-.event-detail{
+
+.event-detail {
     margin: 20px 40px;
     margin-top: -40px;
     background-color: white;
@@ -291,17 +378,20 @@ figure {
     padding: 20px;
     text-align: center;
 }
-.event-decription{
+
+.event-decription {
     text-align: left;
 }
-.event-url{
+
+.event-url {
     color: #056fff;
     border: 1px solid;
     padding: 5px 20px;
     text-decoration: none;
     border-radius: 5px;
 }
-.contact{
+
+.contact {
     background-color: #056fff;
     color: white;
     height: 150px;
@@ -310,16 +400,19 @@ figure {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+
 /* .social{
     border: 1px solid red; 
 } 
 */
-.social-link{
+
+.social-link {
     display: inline-block;
     font-size: 50px;
     width: 50px;
     height: 50px;
-    border: 1px solid transparent; 
+    border: 1px solid transparent;
     margin: 0 10px;
     background-size: 50px 50px;
     text-decoration: none;
@@ -328,6 +421,8 @@ figure {
     justify-content: center;
     align-items: center;
 }
+
+
 /* .social-link.twitter{
     background-image: url("../images/twitter.svg");
     
@@ -344,7 +439,8 @@ figure {
     background-image: url("../images/instagram.svg");
     
 } */
-.form-email input{
+
+.form-email input {
     border-color: gray;
     border-style: solid;
     border-radius: 5px;
@@ -354,9 +450,9 @@ figure {
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 5px;
-
 }
-.form-email button{
+
+.form-email button {
     display: block;
     background: transparent;
     color: white;
@@ -365,10 +461,12 @@ figure {
     width: 100px;
     margin-top: 10px;
 }
-.form-email h3{
+
+.form-email h3 {
     font-family: 'Source Sans Pro', sans-serif;
 }
-.container{
+
+.container {
     /* border: 1px solid red;  */
     max-width: 1200px;
     /* width: 100%; */
@@ -378,33 +476,37 @@ figure {
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
-    flex-wrap: inherit;   
+    flex-wrap: inherit;
 }
-.html-video{
+
+.html-video {
     width: 100%;
     height: 20.3em;
 }
-.youtube-video{
+
+.youtube-video {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
 }
-.flexible-video{
+
+.flexible-video {
     width: 100%;
     height: 0;
     padding-top: 56.25%;
     background-color: blue;
     position: relative;
 }
-.burger-button{
+
+.burger-button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, .8);
     display: none;
     line-height: 40px;
     text-align: center;
@@ -414,18 +516,21 @@ figure {
     top: 5px;
     color: white;
 }
+
+
 /*Desktop firs se empieza desde el MQ mas grande*/
-@media screen and (max-width:1024px){
-    .container{
+
+@media screen and (max-width:1024px) {
+    .container {
         padding: 0 1em;
     }
-    .hero{
+    .hero {
         height: auto;
         position: relative;
         overflow: hidden;
         padding: 2em;
     }
-    .hero-image{
+    .hero-image {
         position: absolute;
         z-index: 1;
         left: 0;
@@ -434,7 +539,7 @@ figure {
         bottom: 0;
         width: 100%;
     }
-    h1{
+    h1 {
         font-size: 2em;
         z-index: 2;
     }
@@ -442,35 +547,36 @@ figure {
         width: 475px;
     }
 }
-@media screen and (max-width:767px){
-    
-    .burger-button{
+
+@media screen and (max-width:767px) {
+    .burger-button {
         display: block;
     }
-    .header{
+    .header {
         display: block;
         height: auto;
     }
-    .header ol{
-       /*  display: initial; */ /* deja el display por defecto del elemento */
-       display: block;
+    .header ol {
+        /*  display: initial; */
+        /* deja el display por defecto del elemento */
+        display: block;
     }
-    .header ol li{
+    .header ol li {
         height: 50px;
     }
-    .header a{
+    .header a {
         justify-content: center;
         height: 40px;
         font-size: 2em;
         text-decoration: underline;
         margin-bottom: .5em;
     }
-    .header .logo{
+    .header .logo {
         text-align: center;
     }
-    .menu{
+    .menu {
         position: fixed;
-        background-color: rgba(5, 111, 255,.9);
+        background-color: rgba(5, 111, 255, .9);
         z-index: 3;
         top: 0;
         left: -100vw;
@@ -482,87 +588,88 @@ figure {
         justify-content: center;
         transition: 3s;
     }
-    .menu.is-active{
+    .menu.is-active {
         left: 0;
     }
-    .project{
+    .project {
         display: block;
     }
-    .project-imageContainer{
+    .project-imageContainer {
         width: auto;
         text-align: center;
     }
-    .project-details{
+    .project-details {
         width: auto;
         /* font-size: 16px; */
     }
     .project-course,
     .project-date,
-    .project-url{
-    margin: .4em 0;
-}
-    .project-title{
+    .project-url {
+        margin: .4em 0;
+    }
+    .project-title {
         font-size: 1.5em;
         margin-bottom: .3em;
     }
-    .project-url{
+    .project-url {
         font-size: 1em;
     }
-    .project-course{
+    .project-course {
         font-size: .7em;
     }
-    .project-date{
+    .project-date {
         font-size: 1em;
     }
-    .project-description{
+    .project-description {
         font-size: .8em;
     }
-    .event{
+    .event {
         width: auto;
         flex-shrink: initial;
     }
-    .event img{
+    .event img {
         width: 100%;
     }
 }
-@media screen and (max-width:480px){
-    h1{
+
+@media screen and (max-width:480px) {
+    h1 {
         font-size: 1.5em;
     }
-    .project-details{
+    .project-details {
         font-size: 12px;
     }
-    .event-detail{
+    .event-detail {
         margin: -2em .5em .5em;
         padding: 1.5em;
     }
-    .contact{
+    .contact {
         height: auto;
         padding: 1em 0;
         display: block;
         text-align: center;
-
     }
-    .form-email button{
+    .form-email button {
         margin: 1em auto;
     }
-    .form-email h3{
+    .form-email h3 {
         margin-top: 0;
     }
-    .footer{
+    .footer {
         display: block;
         text-align: center;
         border: 1px solid transparent;
     }
 }
-@media screen and (max-width:320px){
-    h1{
+
+@media screen and (max-width:320px) {
+    h1 {
         font-size: 1.2em;
     }
-    .hero{
+    .hero {
         padding: 2em 1em;
     }
     .event-url {
         font-size: .8em;
-    }   
+    }
 }
