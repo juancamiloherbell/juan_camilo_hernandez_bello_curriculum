@@ -394,7 +394,7 @@ figure {
 .contact {
     background-color: #056fff;
     color: white;
-    height: 150px;
+    height: 212px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -520,7 +520,7 @@ figure {
 
 /*Desktop firs se empieza desde el MQ mas grande*/
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1023px) {
     .container {
         padding: 0 1em;
     }
@@ -549,6 +549,13 @@ figure {
 }
 
 @media screen and (max-width:767px) {
+    .event-list-title {
+        margin-left: 0;
+    }
+    h2 {
+        font-size: 1.2em;
+        margin: 0.5em 0;
+    }
     .burger-button {
         display: block;
     }
@@ -637,7 +644,7 @@ figure {
         font-size: 1.5em;
     }
     .project-details {
-        font-size: 12px;
+        font-size: 14px;
     }
     .event-detail {
         margin: -2em .5em .5em;
@@ -660,6 +667,12 @@ figure {
         text-align: center;
         border: 1px solid transparent;
     }
+    .social-link {
+        font-size: 40px;
+        width: 40px;
+        height: 40px;
+        padding: 3px;
+    }
 }
 
 @media screen and (max-width:320px) {
@@ -671,5 +684,8 @@ figure {
     }
     .event-url {
         font-size: .8em;
+    }
+    .portfolio {
+        padding: 10px;
     }
 }
