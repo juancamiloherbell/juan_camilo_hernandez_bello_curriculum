@@ -159,10 +159,10 @@ figure {
 
 .hero {
     height: 430px;
-    /* background-image: url('../images/hero.jpg'); */
+    background-image: url('../images/fondo_hero.png');
     background-color: #1b2127;
-    /* background-size: 500px 300px; */
-    /* background-repeat: no-repeat; */
+    background-size: 100%;
+    background-repeat: no-repeat;
     /* background-position-x: right; */
     display: flex;
     align-items: center;
@@ -250,13 +250,16 @@ figure {
 /* Añade la propiedad justify-content con el valor space-between para mandar cada elemento hijo del header a un extremo contrario. El figure a la izquierda y el nav a la derecha. */
 
 .header {
-    background-color: #1b2127;
+    background-color: transparent;
     color: white;
     display: flex;
     justify-content: space-between;
     height: 70px;
     /* <---- solo agregamos esta linea ancho del elemento padre*/
     align-items: center;
+    z-index: 3;
+    position: absolute;
+    width: 100%;
 }
 
 .menu {
