@@ -366,6 +366,10 @@ figure {
     background-color: #f4fbff;
 }
 
+.event-title .project-date {
+    margin: 1px 0;
+}
+
 .event img {
     width: 575px;
     height: 324px;
@@ -375,7 +379,7 @@ figure {
 
 .event-detail {
     margin: 20px 40px;
-    margin-top: -40px;
+    margin-top: -30px;
     background-color: white;
     position: relative;
     padding: 20px;
